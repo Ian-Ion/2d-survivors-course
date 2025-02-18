@@ -21,3 +21,7 @@ collision_layer = 0
 [node name="BasicEnemy" parent="." instance=ExtResource("4_oc04t")]
 position = Vector2(321, 208)
 collision_layer = 0
+
+[node name="BasicEnemy2" parent="." instance=ExtResource("4_oc04t")]
+position = Vector2(589, 57)
+collision_layer = 0
