@@ -1,11 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://c6q3wbxmht2ox"]
+[gd_scene load_steps=8 format=3 uid="uid://c6q3wbxmht2ox"]
 
 [ext_resource type="TileSet" uid="uid://crqs4dsym46lf" path="res://resources/tileset.tres" id="1_0ofmv"]
 [ext_resource type="PackedScene" uid="uid://ca7ti76008rx5" path="res://scenes/ui/arena_time_ui.tscn" id="1_feb07"]
-[ext_resource type="PackedScene" uid="uid://bci6wtfeyyq0k" path="res://scenes/game_camera/game_camera.tscn" id="1_jb45a"]
+[ext_resource type="PackedScene" uid="uid://bci6wtfeyyq0k" path="res://scenes/game_object/game_camera/game_camera.tscn" id="1_jb45a"]
 [ext_resource type="PackedScene" uid="uid://blunypxwo2aj6" path="res://scenes/manager/enemy_manager.tscn" id="1_llmcb"]
-[ext_resource type="PackedScene" uid="uid://vrhfp82ex7cn" path="res://scenes/player/player.tscn" id="1_ndkcf"]
+[ext_resource type="PackedScene" uid="uid://vrhfp82ex7cn" path="res://scenes/game_object/player/player.tscn" id="1_ndkcf"]
 [ext_resource type="PackedScene" uid="uid://b2s2pr220lu1x" path="res://scenes/manager/arena_time_manager.tscn" id="2_40lpf"]
+[ext_resource type="PackedScene" uid="uid://b0ljg8up0ktbh" path="res://scenes/game_object/experience_vial/experience_vial.tscn" id="7_vuj8p"]
 
 [node name="Main" type="Node"]
 
@@ -26,3 +27,21 @@ layer_0/tile_data = PackedInt32Array(131072, 65536, 4, 131073, 0, 4, 131074, 0, 
 [node name="Player" parent="." instance=ExtResource("1_ndkcf")]
 position = Vector2(368, 283)
 collision_layer = 0
+
+[node name="ExperienceVial" parent="." instance=ExtResource("7_vuj8p")]
+position = Vector2(267, 270)
+
+[node name="ExperienceVial2" parent="." instance=ExtResource("7_vuj8p")]
+position = Vector2(273, 336)
+
+[node name="ExperienceVial3" parent="." instance=ExtResource("7_vuj8p")]
+position = Vector2(320, 191)
+
+[node name="ExperienceVial4" parent="." instance=ExtResource("7_vuj8p")]
+position = Vector2(437, 211)
+
+[node name="ExperienceVial5" parent="." instance=ExtResource("7_vuj8p")]
+position = Vector2(472, 287)
+
+[node name="ExperienceVial6" parent="." instance=ExtResource("7_vuj8p")]
+position = Vector2(435, 322)
