@@ -12,6 +12,3 @@ func _ready():
 func on_experience_updated(current_experience: float, target_experience: float):
 	var percent = current_experience / target_experience
 	progress_bar.value = percent
-	
-	print("current_experience" + str(current_experience))
-	print("target_experience" + str(target_experience))
