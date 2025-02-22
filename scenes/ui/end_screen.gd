@@ -1,10 +1,16 @@
 extends CanvasLayer
+class_name EndScreen
 
 
 func _ready():
 	get_tree().paused = true
 	$"%RestartButton".pressed.connect(on_restart_button_pressed)
 	$"%QuitButton".pressed.connect(on_quit_button_pressed)
+
+
+func set_defeat():
+	$"%Title".text = "Defeat"
+	$"%Description".text = "You lost!"
 
 
 func on_restart_button_pressed():
