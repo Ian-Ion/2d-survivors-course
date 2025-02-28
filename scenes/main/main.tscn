@@ -44,7 +44,7 @@ y_sort_enabled = true
 
 [node name="Player" parent="Entities" instance=ExtResource("1_ndkcf")]
 unique_name_in_owner = true
-position = Vector2(115, 267)
+position = Vector2(328, 233)
 collision_layer = 0
 
 [node name="Foreground" type="Node2D" parent="." groups=["foreground_layer"]]
