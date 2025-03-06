@@ -39,6 +39,8 @@ func set_bus_volume_percent(bus_name: String, percent: float):
 
 
 func on_back_button_pressed():
+	ScreenTransition.transition()
+	await ScreenTransition.transition_halfway
 	back_pressed.emit()
 
 
