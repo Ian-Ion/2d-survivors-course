@@ -36,9 +36,9 @@ func add_meta_upgrade(upgrade: MetaUpgrade):
 	save()
 
 
-func get_current_quantity(upgrade: MetaUpgrade):
-	if save_data["meta_upgrades"].has(upgrade.id):
-		return save_data["meta_upgrades"][upgrade.id]["quantity"]
+func get_current_quantity(upgrade_id: String):
+	if save_data["meta_upgrades"].has(upgrade_id):
+		return save_data["meta_upgrades"][upgrade_id]["quantity"]
 	
 	return 0
 
