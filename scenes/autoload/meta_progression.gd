@@ -32,7 +32,8 @@ func add_meta_upgrade(upgrade: MetaUpgrade):
 		}
 	
 	save_data["meta_upgrades"][upgrade.id]["quantity"] += 1
-	print(save_data)
+	save_data["meta_upgrade_currency"] -= upgrade.experience_cost
+	save()
 
 
 func on_experience_collected(number: float):
