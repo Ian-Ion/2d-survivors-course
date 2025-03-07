@@ -1,12 +1,14 @@
-[gd_scene load_steps=6 format=4 uid="uid://c3ean3byun4ns"]
+[gd_scene load_steps=7 format=4 uid="uid://c3ean3byun4ns"]
 
 [ext_resource type="Script" path="res://scenes/ui/meta_menu.gd" id="1_pj6w8"]
 [ext_resource type="Script" path="res://resources/meta_upgrades/meta_upgrade.gd" id="2_d8s31"]
 [ext_resource type="PackedScene" uid="uid://d17tbjqaxsksr" path="res://scenes/ui/vignette.tscn" id="2_p3mnp"]
 [ext_resource type="TileSet" uid="uid://crqs4dsym46lf" path="res://resources/tileset.tres" id="3_bdsgx"]
 [ext_resource type="Resource" uid="uid://dk8ukapyeeck5" path="res://resources/meta_upgrades/experience_gain.tres" id="3_ixv4x"]
+[ext_resource type="PackedScene" uid="uid://blrs8jdkx61jy" path="res://scenes/ui/sound_button.tscn" id="4_ckjor"]
 
 [node name="Meta Menu" type="CanvasLayer"]
+process_mode = 3
 layer = 2
 script = ExtResource("1_pj6w8")
 upgrades = Array[ExtResource("2_d8s31")]([ExtResource("3_ixv4x")])
@@ -29,6 +31,14 @@ theme_override_constants/margin_left = 24
 theme_override_constants/margin_top = 16
 theme_override_constants/margin_right = 24
 theme_override_constants/margin_bottom = 16
+
+[node name="BackButton" parent="MarginContainer" instance=ExtResource("4_ckjor")]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Back"
 
 [node name="GridContainer" type="GridContainer" parent="MarginContainer"]
 unique_name_in_owner = true

@@ -36,5 +36,16 @@ func add_meta_upgrade(upgrade: MetaUpgrade):
 	save()
 
 
+func get_current_quantity(upgrade: MetaUpgrade):
+	if save_data["meta_upgrades"].has(upgrade.id):
+		return save_data["meta_upgrades"][upgrade.id]["quantity"]
+	
+	return 0
+
+
+func get_currency():
+	return save_data["meta_upgrade_currency"]
+
+
 func on_experience_collected(number: float):
 	save_data["meta_upgrade_currency"] += number
