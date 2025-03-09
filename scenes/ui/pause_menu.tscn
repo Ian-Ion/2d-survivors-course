@@ -18,10 +18,6 @@ tracks/0/keys = {
 "values": [Color(1, 1, 1, 1)]
 }
 
-[sub_resource type="Animation" id="Animation_p7wn1"]
-resource_name = "out"
-step = 0.05
-
 [sub_resource type="Animation" id="Animation_hkq4q"]
 resource_name = "default"
 length = 0.15
@@ -38,6 +34,10 @@ tracks/0/keys = {
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
+
+[sub_resource type="Animation" id="Animation_p7wn1"]
+resource_name = "out"
+step = 0.05
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ihatf"]
 _data = {
