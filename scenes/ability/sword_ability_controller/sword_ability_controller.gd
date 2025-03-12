@@ -12,7 +12,7 @@ var base_wait_time
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	base_wait_time = $Timer.wait_time
-	$Timer.timeout.connect(on_timer_timeout)  # get_node("Timer")
+	$Timer.timeout.connect(on_timer_timeout)
 	GameEvents.ability_upgrade_added.connect(on_ability_upgrade_added)
 
 
