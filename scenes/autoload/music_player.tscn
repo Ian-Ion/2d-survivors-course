@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://c07vxl74hflpb"]
 
 [ext_resource type="AudioStream" uid="uid://8eaqjo6egmte" path="res://assets/audio/Hear+What+They+Say.mp3" id="1_6goih"]
-[ext_resource type="Script" path="res://scenes/autoload/music_player.gd" id="2_6c1ml"]
+[ext_resource type="Script" uid="uid://b4paa3ilftjr" path="res://scenes/autoload/music_player.gd" id="2_6c1ml"]
 
 [node name="MusicPlayer" type="AudioStreamPlayer"]
 process_mode = 3

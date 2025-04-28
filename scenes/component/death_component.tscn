@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://chffs2g5jnpt4"]
 
-[ext_resource type="Script" path="res://scenes/component/death_component.gd" id="1_dwkqd"]
+[ext_resource type="Script" uid="uid://bwn7awlcvt465" path="res://scenes/component/death_component.gd" id="1_dwkqd"]
 [ext_resource type="Texture2D" uid="uid://beei1g5yoqxoe" path="res://scenes/game_object/basic_enemy/basic_enemy.png" id="1_ri86x"]
 [ext_resource type="PackedScene" uid="uid://dtlpwu7atygdi" path="res://scenes/component/random_stream_player_2d_component.tscn" id="3_1b5on"]
 [ext_resource type="AudioStream" uid="uid://b61622vcijniw" path="res://assets/audio/footstep_carpet_000.ogg" id="4_lnb3k"]
@@ -55,8 +55,8 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_icr3y"]
 _data = {
-"RESET": SubResource("Animation_m7dir"),
-"default": SubResource("Animation_urvt1")
+&"RESET": SubResource("Animation_m7dir"),
+&"default": SubResource("Animation_urvt1")
 }
 
 [sub_resource type="Curve" id="Curve_4wlox"]
@@ -82,18 +82,18 @@ script = ExtResource("1_dwkqd")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_icr3y")
+&"": SubResource("AnimationLibrary_icr3y")
 }
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
 emitting = false
 amount = 1
-process_material = SubResource("ParticleProcessMaterial_1vklv")
 texture = ExtResource("1_ri86x")
 lifetime = 0.5
 one_shot = true
 fixed_fps = 0
 interpolate = false
+process_material = SubResource("ParticleProcessMaterial_1vklv")
 
 [node name="HitRandomAudioPlayerComponent" parent="." instance=ExtResource("3_1b5on")]
 streams = Array[AudioStream]([ExtResource("4_lnb3k"), ExtResource("5_6s73j"), ExtResource("6_imja5"), ExtResource("7_jrqit"), ExtResource("8_uualk")])

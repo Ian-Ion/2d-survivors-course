@@ -1,6 +1,6 @@
 [gd_scene load_steps=19 format=3 uid="uid://vrhfp82ex7cn"]
 
-[ext_resource type="Script" path="res://scenes/game_object/player/player.gd" id="1_0euo7"]
+[ext_resource type="Script" uid="uid://dpb6xh1w31m01" path="res://scenes/game_object/player/player.gd" id="1_0euo7"]
 [ext_resource type="Texture2D" uid="uid://cwu05q5u3qs27" path="res://scenes/game_object/player/player.png" id="1_db4us"]
 [ext_resource type="PackedScene" uid="uid://csvpsvcwmtu0s" path="res://scenes/component/health_component.tscn" id="2_7xmlg"]
 [ext_resource type="PackedScene" uid="uid://c14yd1c2fq3k" path="res://scenes/component/velocity_component.tscn" id="2_lwxj8"]
@@ -95,8 +95,8 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_mi0li"]
 _data = {
-"RESET": SubResource("Animation_6guty"),
-"walk": SubResource("Animation_7av5x")
+&"RESET": SubResource("Animation_6guty"),
+&"walk": SubResource("Animation_7av5x")
 }
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_df52i"]
@@ -122,7 +122,7 @@ script = ExtResource("1_0euo7")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_mi0li")
+&"": SubResource("AnimationLibrary_mi0li")
 }
 
 [node name="VelocityComponent" parent="." instance=ExtResource("2_lwxj8")]

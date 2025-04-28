@@ -1,6 +1,6 @@
 [gd_scene load_steps=21 format=3 uid="uid://bbjll8k3l5ykp"]
 
-[ext_resource type="Script" path="res://scenes/ui/ability_upgrade_card.gd" id="1_8hocr"]
+[ext_resource type="Script" uid="uid://ckokmbqldp435" path="res://scenes/ui/ability_upgrade_card.gd" id="1_8hocr"]
 [ext_resource type="PackedScene" uid="uid://ct86qmqir4yng" path="res://scenes/component/random_stream_player_component.tscn" id="2_13mhs"]
 [ext_resource type="AudioStream" uid="uid://b81jcf8pyi2m3" path="res://assets/audio/switch1.ogg" id="3_ntuq0"]
 [ext_resource type="AudioStream" uid="uid://h1fcrtr5cy4x" path="res://assets/audio/switch2.ogg" id="4_n1kby"]
@@ -143,10 +143,10 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ofuu5"]
 _data = {
-"RESET": SubResource("Animation_031by"),
-"discard": SubResource("Animation_wprxl"),
-"in": SubResource("Animation_lgnbe"),
-"selected": SubResource("Animation_coxm1")
+&"RESET": SubResource("Animation_031by"),
+&"discard": SubResource("Animation_wprxl"),
+&"in": SubResource("Animation_lgnbe"),
+&"selected": SubResource("Animation_coxm1")
 }
 
 [sub_resource type="Animation" id="Animation_1n01w"]
@@ -197,8 +197,8 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3vg8b"]
 _data = {
-"RESET": SubResource("Animation_1n01w"),
-"hover": SubResource("Animation_naggx")
+&"RESET": SubResource("Animation_1n01w"),
+&"hover": SubResource("Animation_naggx")
 }
 
 [node name="AbilityUpgradeCard" type="PanelContainer" groups=["upgrade_card"]]
@@ -217,12 +217,12 @@ streams = Array[AudioStream]([ExtResource("3_ntuq0"), ExtResource("4_n1kby"), Ex
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_ofuu5")
+&"": SubResource("AnimationLibrary_ofuu5")
 }
 
 [node name="HoverAnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_3vg8b")
+&"": SubResource("AnimationLibrary_3vg8b")
 }
 
 [node name="MarginContainer" type="MarginContainer" parent="."]

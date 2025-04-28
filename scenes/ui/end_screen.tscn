@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://cxmwnajrj1lpg"]
 
-[ext_resource type="Script" path="res://scenes/ui/end_screen.gd" id="1_mqm3w"]
+[ext_resource type="Script" uid="uid://cxn2slpf0dmwd" path="res://scenes/ui/end_screen.gd" id="1_mqm3w"]
 [ext_resource type="AudioStream" uid="uid://6ltvss7777hn" path="res://assets/audio/jingles_victory.ogg" id="2_knn74"]
 [ext_resource type="PackedScene" uid="uid://blrs8jdkx61jy" path="res://scenes/ui/sound_button.tscn" id="2_ncomd"]
 [ext_resource type="AudioStream" uid="uid://bhicw6d06xpnj" path="res://assets/audio/jingles_defeat.ogg" id="3_ayf67"]
@@ -56,9 +56,9 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_tcs8m"]
 _data = {
-"RESET": SubResource("Animation_5qvni"),
-"in": SubResource("Animation_l5vhh"),
-"out": SubResource("Animation_im50n")
+&"RESET": SubResource("Animation_5qvni"),
+&"in": SubResource("Animation_l5vhh"),
+&"out": SubResource("Animation_im50n")
 }
 
 [node name="EndScreen" type="CanvasLayer"]
@@ -67,7 +67,7 @@ script = ExtResource("1_mqm3w")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_tcs8m")
+&"": SubResource("AnimationLibrary_tcs8m")
 }
 autoplay = "in"
 

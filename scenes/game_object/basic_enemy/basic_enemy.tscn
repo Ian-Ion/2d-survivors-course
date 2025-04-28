@@ -1,13 +1,13 @@
 [gd_scene load_steps=22 format=3 uid="uid://bvx65m283ts2m"]
 
 [ext_resource type="Texture2D" uid="uid://beei1g5yoqxoe" path="res://scenes/game_object/basic_enemy/basic_enemy.png" id="1_0n7p2"]
-[ext_resource type="Script" path="res://scenes/game_object/basic_enemy/basic_enemy.gd" id="1_05tkv"]
+[ext_resource type="Script" uid="uid://bg5gos5dho33t" path="res://scenes/game_object/basic_enemy/basic_enemy.gd" id="1_05tkv"]
 [ext_resource type="PackedScene" uid="uid://csvpsvcwmtu0s" path="res://scenes/component/health_component.tscn" id="2_auhf2"]
 [ext_resource type="PackedScene" uid="uid://vgg80ew52dlk" path="res://scenes/component/vial_drop_component.tscn" id="3_suhtm"]
 [ext_resource type="PackedScene" uid="uid://c14yd1c2fq3k" path="res://scenes/component/velocity_component.tscn" id="4_mmjov"]
 [ext_resource type="PackedScene" uid="uid://chffs2g5jnpt4" path="res://scenes/component/death_component.tscn" id="4_n85vw"]
 [ext_resource type="PackedScene" uid="uid://bnlibmjvuocbg" path="res://scenes/component/hurtbox_component.tscn" id="4_vkfrv"]
-[ext_resource type="Shader" path="res://scenes/component/hit_flash_component.gdshader" id="6_uu5rp"]
+[ext_resource type="Shader" uid="uid://evnlcc0hv1mk" path="res://scenes/component/hit_flash_component.gdshader" id="6_uu5rp"]
 [ext_resource type="PackedScene" uid="uid://bvmu7gsu81xng" path="res://scenes/component/hit_flash_component.tscn" id="7_inkjk"]
 [ext_resource type="AudioStream" uid="uid://b61622vcijniw" path="res://assets/audio/footstep_carpet_000.ogg" id="10_bgapt"]
 [ext_resource type="PackedScene" uid="uid://dtlpwu7atygdi" path="res://scenes/component/random_stream_player_2d_component.tscn" id="10_uci3k"]
@@ -75,8 +75,8 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_em4cv"]
 _data = {
-"RESET": SubResource("Animation_u8njv"),
-"walk": SubResource("Animation_i0fay")
+&"RESET": SubResource("Animation_u8njv"),
+&"walk": SubResource("Animation_i0fay")
 }
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_glx8b"]
@@ -98,7 +98,7 @@ script = ExtResource("1_05tkv")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_em4cv")
+&"": SubResource("AnimationLibrary_em4cv")
 }
 autoplay = "walk"
 

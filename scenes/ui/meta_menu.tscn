@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=4 uid="uid://c3ean3byun4ns"]
 
-[ext_resource type="Script" path="res://scenes/ui/meta_menu.gd" id="1_pj6w8"]
-[ext_resource type="Script" path="res://resources/meta_upgrades/meta_upgrade.gd" id="2_d8s31"]
+[ext_resource type="Script" uid="uid://brua3i11cwdcr" path="res://scenes/ui/meta_menu.gd" id="1_pj6w8"]
+[ext_resource type="Script" uid="uid://cmvnl80we312" path="res://resources/meta_upgrades/meta_upgrade.gd" id="2_d8s31"]
 [ext_resource type="PackedScene" uid="uid://d17tbjqaxsksr" path="res://scenes/ui/vignette.tscn" id="2_p3mnp"]
 [ext_resource type="TileSet" uid="uid://crqs4dsym46lf" path="res://resources/tileset.tres" id="3_bdsgx"]
 [ext_resource type="Resource" uid="uid://dk8ukapyeeck5" path="res://resources/meta_upgrades/experience_gain.tres" id="3_ixv4x"]

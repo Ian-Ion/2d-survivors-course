@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://d17tbjqaxsksr"]
 
-[ext_resource type="Script" path="res://scenes/ui/vignette.gd" id="1_spybw"]
-[ext_resource type="Shader" path="res://scenes/ui/vignette.gdshader" id="1_ym8n3"]
+[ext_resource type="Script" uid="uid://dvoxosmvps8iy" path="res://scenes/ui/vignette.gd" id="1_spybw"]
+[ext_resource type="Shader" uid="uid://bktar7iujdasq" path="res://scenes/ui/vignette.gdshader" id="1_ym8n3"]
 
 [sub_resource type="Animation" id="Animation_6eoc8"]
 length = 0.001
@@ -85,8 +85,8 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_scy25"]
 _data = {
-"RESET": SubResource("Animation_6eoc8"),
-"hit": SubResource("Animation_sq8xg")
+&"RESET": SubResource("Animation_6eoc8"),
+&"hit": SubResource("Animation_sq8xg")
 }
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_3wlek"]
@@ -100,7 +100,7 @@ script = ExtResource("1_spybw")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_scy25")
+&"": SubResource("AnimationLibrary_scy25")
 }
 
 [node name="ColorRect" type="ColorRect" parent="."]

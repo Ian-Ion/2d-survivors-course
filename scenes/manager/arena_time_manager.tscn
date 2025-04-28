@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b2s2pr220lu1x"]
 
-[ext_resource type="Script" path="res://scenes/manager/arena_time_manager.gd" id="1_e6o1q"]
+[ext_resource type="Script" uid="uid://d0wrqa8ayqn8f" path="res://scenes/manager/arena_time_manager.gd" id="1_e6o1q"]
 [ext_resource type="PackedScene" uid="uid://cxmwnajrj1lpg" path="res://scenes/ui/end_screen.tscn" id="2_ffcwf"]
 
 [node name="ArenaTimeManager" type="Node"]

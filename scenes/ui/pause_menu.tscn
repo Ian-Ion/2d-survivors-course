@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://dhtgxakq5h5nv"]
 
-[ext_resource type="Script" path="res://scenes/ui/pause_menu.gd" id="1_72vuh"]
+[ext_resource type="Script" uid="uid://bgllibu0ryqtw" path="res://scenes/ui/pause_menu.gd" id="1_72vuh"]
 [ext_resource type="PackedScene" uid="uid://blrs8jdkx61jy" path="res://scenes/ui/sound_button.tscn" id="4_vmwdq"]
 
 [sub_resource type="Animation" id="Animation_8u5eh"]
@@ -41,9 +41,9 @@ step = 0.05
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ihatf"]
 _data = {
-"RESET": SubResource("Animation_8u5eh"),
-"default": SubResource("Animation_hkq4q"),
-"out": SubResource("Animation_p7wn1")
+&"RESET": SubResource("Animation_8u5eh"),
+&"default": SubResource("Animation_hkq4q"),
+&"out": SubResource("Animation_p7wn1")
 }
 
 [node name="PauseMenu" type="CanvasLayer"]
@@ -52,7 +52,7 @@ script = ExtResource("1_72vuh")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_ihatf")
+&"": SubResource("AnimationLibrary_ihatf")
 }
 
 [node name="ColorRect" type="ColorRect" parent="."]

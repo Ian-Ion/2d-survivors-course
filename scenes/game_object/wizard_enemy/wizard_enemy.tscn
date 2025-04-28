@@ -1,6 +1,6 @@
 [gd_scene load_steps=22 format=3 uid="uid://ba67orefaadl2"]
 
-[ext_resource type="Script" path="res://scenes/game_object/wizard_enemy/wizard_enemy.gd" id="1_2ud0t"]
+[ext_resource type="Script" uid="uid://c2ghv4t3v6aqx" path="res://scenes/game_object/wizard_enemy/wizard_enemy.gd" id="1_2ud0t"]
 [ext_resource type="PackedScene" uid="uid://csvpsvcwmtu0s" path="res://scenes/component/health_component.tscn" id="1_egwxj"]
 [ext_resource type="PackedScene" uid="uid://c14yd1c2fq3k" path="res://scenes/component/velocity_component.tscn" id="2_rn80n"]
 [ext_resource type="PackedScene" uid="uid://chffs2g5jnpt4" path="res://scenes/component/death_component.tscn" id="2_vqkmq"]
@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://cdw3q0r766wjw" path="res://scenes/game_object/wizard_enemy/wizard_enemy.png" id="4_xxjtx"]
 [ext_resource type="PackedScene" uid="uid://vgg80ew52dlk" path="res://scenes/component/vial_drop_component.tscn" id="4_yrhme"]
 [ext_resource type="PackedScene" uid="uid://bvmu7gsu81xng" path="res://scenes/component/hit_flash_component.tscn" id="5_ytkgy"]
-[ext_resource type="Shader" path="res://scenes/component/hit_flash_component.gdshader" id="6_x1oft"]
+[ext_resource type="Shader" uid="uid://evnlcc0hv1mk" path="res://scenes/component/hit_flash_component.gdshader" id="6_x1oft"]
 [ext_resource type="PackedScene" uid="uid://dtlpwu7atygdi" path="res://scenes/component/random_stream_player_2d_component.tscn" id="8_xnhmn"]
 [ext_resource type="AudioStream" uid="uid://b61622vcijniw" path="res://assets/audio/footstep_carpet_000.ogg" id="9_k2gud"]
 [ext_resource type="AudioStream" uid="uid://4sb42lq7ireo" path="res://assets/audio/footstep_carpet_001.ogg" id="10_x5pnt"]
@@ -116,8 +116,8 @@ tracks/3/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_q3nal"]
 _data = {
-"RESET": SubResource("Animation_4eeed"),
-"walk": SubResource("Animation_x7nyl")
+&"RESET": SubResource("Animation_4eeed"),
+&"walk": SubResource("Animation_x7nyl")
 }
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_07y6e"]
@@ -138,7 +138,7 @@ script = ExtResource("1_2ud0t")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_q3nal")
+&"": SubResource("AnimationLibrary_q3nal")
 }
 autoplay = "walk"
 
